@@ -7,22 +7,45 @@
 <style>
 
 #grid1 {
+margin: 0 auto;
+background-color: white;
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+grid-template-columns: repeat(auto-fit, minmax(230px, auto));
 grid-auto-rows: minmax(80px,auto);
 gap: 10px;
-height: 40vh;
-border: 1px dashed;
 align-items: start;
-justify-content: start;
+justify-content: space-around;
+column-gap: 40px;
+row-gap: 40px;
 }
 element.style {
 }
 .img > img {
-width: 50%;
-background-color: rgb(39,101,182);
-border-radius: 10px;
+    width: 150px;
+    height: 100px;
+    padding: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgb(39,101,182);
+    background-size: cover;
+	text-align:center;
 }
+.img>p {
+text-align:center;
+width: 160px;
+background-color: rgb(236, 232, 232);
+margin-left: -1px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+h2 {
+margin-bottom: 40px;
+}
+p {
+    margin-top: -4px;
+    font-size: 16px;
+}
+
 @media screen and (max-width: 1024px) {
 .column {
 flex-basis: 33.33%;
